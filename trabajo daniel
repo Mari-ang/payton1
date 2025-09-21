@@ -1,0 +1,24 @@
+class dog:       #class name
+   species= "canina"      #  class atribute,sub clase
+
+   def __init__ (self,name,age):     #constructor
+       self.name = name          #object atribute
+       self.age = age            # object atribute
+
+       print(f"creating new object {name}")    # a messje appers when creating an object
+
+    def bark(self):     #bark methon      define metodo   funciones de metodo
+     print("woof!")    #a bark messaje is printed     hace lo del metodo
+
+      def aging(self): 
+         self.age = self.age+1   
+
+dog1 = dog("scooby",14)
+dog2 = ("firulais",2)
+
+dog1.bark()
+dog2.aging()
+
+print(dog1.age)
+print(dog2.age)
+
