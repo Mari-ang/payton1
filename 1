@@ -1,0 +1,15 @@
+# TODO: Pide un número y calcula su raíz cuadrada
+# - Maneja si el usuario no ingresa un número (ValueError)
+# - Si el número es negativo, muestra un error personalizado
+
+import math 
+
+try:
+  numero = int(input("dame un numero: "))
+  if numero <0 :
+    raise ValueError("Falló aqui")
+  raiz = math.sqrt(numero)
+  print(raiz)
+
+except ValueError as e:
+  print("Error en: ", e)
