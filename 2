@@ -1,0 +1,20 @@
+# TODO: Pide dos números y una operación (+, -, *, /)
+# - Realiza la operación
+# - Maneja división entre cero
+# - Si la operación no es válida, lanza un error personalizado
+
+try: 
+  A = int(input("dame el 1num:"))
+  B = int(input("dame el 2num:"))
+  OP = input("que operacion quieres realizar:")
+  if OP == "+":
+    print(A+B)
+  elif OP == "-":
+    print(A*B)
+  elif OP == "*":
+     print
+
+
+
+except ZeroDivisionError as e:
+  print("error en:",e)
